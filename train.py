@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from models.ViT import ViT
+from models import ViT
 from utils import save_model, train_loader, test_loader
 
 
