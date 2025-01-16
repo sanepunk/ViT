@@ -22,7 +22,11 @@ model = ViT(
 			mlp_dropout = 0.1,
 			embedding_dropout = 0.1,
 			num_classes= 100
-)
+) 
+try:
+    model.load_state_dict(torch.load('model_interrupted.pth'))
+except:
+    print("Model not available")
 
 train_accs = []
 test_accs = []
