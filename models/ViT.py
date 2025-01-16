@@ -1,7 +1,7 @@
 import torch
 from torch import nn
-from PatchEmbedding import PatchEmbedding
-from Transformer import TransformerEncoderBlock
+from .PatchEmbedding import PatchEmbedding
+from .Transformer import TransformerEncoderBlock
 
 class ViT(nn.Module):
 	"""
