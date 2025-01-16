@@ -1,6 +1,6 @@
 from torch import nn
-from MultiHeadAttention import MultiHeadSelfAttention
-from MLPBlock import MLPBlock
+from .MultiHeadAttention import MultiHeadSelfAttention
+from .MLPBlock import MLPBlock
 import torch
 
 
