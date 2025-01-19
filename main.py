@@ -28,8 +28,8 @@ try:
 except:
     print("Model not available")
 
-train_accs = []
-test_accs = []
+train_acc = []
+test_acc = []
 train_losses = []
 test_losses = []
 def handle_interrupt():
@@ -37,7 +37,7 @@ def handle_interrupt():
     # Place any custom code here, like saving model, logging, etc.
     # For example, you could save the model state:
     torch.save(model.state_dict(), "model_interrupted.pth")
-    np.savez('training_results.npz', train_accs, test_accs, train_losses, test_losses)
+    np.savez('training_results.npz', train_acc, test_acc, train_losses, test_losses)
     print("Model state saved.")
     sys.exit(0)  # Exit the program gracefully
 
@@ -98,7 +98,7 @@ try:
         epoch_train_loss = running_loss / len(trainloader)
         epoch_train_acc = accuracy_score(all_train_labels, all_train_preds) * 100
         train_losses.append(epoch_train_loss)
-        train_accs.append(epoch_train_acc)
+        train_acc.append(epoch_train_acc)
 
         model.eval()  
         all_test_labels = []
@@ -118,14 +118,14 @@ try:
         epoch_test_loss = running_test_loss / len(testloader)
         epoch_test_acc = accuracy_score(all_test_labels, all_test_preds) * 100
         test_losses.append(epoch_test_loss)
-        test_accs.append(epoch_test_acc)
+        test_acc.append(epoch_test_acc)
 
         print(f'Epoch [{epoch + 1}/{num_epochs}] - Train Loss: {epoch_train_loss:.4f} - Train Accuracy: {epoch_train_acc:.2f}%')
         print(f'Epoch [{epoch + 1}/{num_epochs}] - Test Loss: {epoch_test_loss:.4f} - Test Accuracy: {epoch_test_acc:.2f}%')
 
     print("\nTraining completed!")
-    print(f"Final Training Accuracy: {train_accs[-1]:.2f}%")
-    print(f"Final Test Accuracy: {test_accs[-1]:.2f}%")
+    print(f"Final Training Accuracy: {train_acc[-1]:.2f}%")
+    print(f"Final Test Accuracy: {test_acc[-1]:.2f}%")
 
 except KeyboardInterrupt:
     handle_interrupt()
