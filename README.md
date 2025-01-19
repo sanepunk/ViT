@@ -6,7 +6,7 @@ This repository provides a comprehensive implementation of the Vision Transforme
 
 ---
 ### Patch Embedding
-<img src="PatchEmbedding.png" width="900" height="200" alt="Patch Embedding">
+<img src="Images/PatchEmbedding.png" width="900" height="200" alt="Patch Embedding">
 
 1. #### Splitting the   Image into Patches:
    1. The input image is divided into non-overlapping patches of a fixed size, such as 16x16 pixels.
@@ -26,7 +26,7 @@ This repository provides a comprehensive implementation of the Vision Transforme
 ---
 
 ### Multi Layer Perceptron (MLP) Block
-<div style="text-align: center;"><img src="MLPBlock.png" width="270" height="500" alt="Multi Layer Perceptron Block"></div>
+<div style="text-align: center;"><img src="Images/MLPBlock.png" width="270" height="500" alt="Multi Layer Perceptron Block"></div>
 
    1. #### Structure of the MLP Block:
       1. First Linear Layer: The input from the attention mechanism is projected into a higher-dimensional space, expanding the feature representation. 
@@ -39,7 +39,7 @@ This repository provides a comprehensive implementation of the Vision Transforme
 ---
 
 ### Multi-Head Self-Attention Mechanism
-<div style="text-align: center;"><img src="MultiHeadSelfAttention.png" width="300" height="400" alt="Multi-Head Self-Attention Mechanism"></div>
+<div style="text-align: center;"><img src="Images/MultiHeadSelfAttention.png" width="300" height="400" alt="Multi-Head Self-Attention Mechanism"></div>
 
    1. #### Structure of the Multi-Head Self-Attention Mechanism:
       1. Input Representation: The input image is divided into non-overlapping patches, each flattened into a vector.
@@ -72,7 +72,7 @@ This repository provides a comprehensive implementation of the Vision Transforme
 ---
 
 ### Transformer Encoder Block
-<div style="text-align: center;"><img src="TransformerEncoder.png" width="250" height="400" alt="Transformer Encoder Block"></div>
+<div style="text-align: center;"><img src="Images/TransformerEncoder.png" width="250" height="400" alt="Transformer Encoder Block"></div>
    
    1. #### Structure of the Transformer Encoder Block:
       1. Layer Normalization:
@@ -98,7 +98,7 @@ This repository provides a comprehensive implementation of the Vision Transforme
 ---
 
 ### Vision Transformer (ViT) 
-<img src="ViTransformer.png" alt="Vision Transformer Block">
+<img src="Images/ViTransformer.png" alt="Vision Transformer Block">
 
    1. #### Key Components of the Vision Transformer:
       1. Patch Embedding:
