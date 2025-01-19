@@ -26,7 +26,7 @@ This repository provides a comprehensive implementation of the Vision Transforme
 ---
 
 ### Multi Layer Perceptron (MLP) Block
-<div style="text-align: center;"><img src="Images/MLPBlock.png" width="270" height="500" alt="Multi Layer Perceptron Block"></div>
+<p align="center"><img src="Images/MLPBlock.png" width="270" height="500" alt="Multi Layer Perceptron Block"></p>
 
    1. #### Structure of the MLP Block:
       1. First Linear Layer: The input from the attention mechanism is projected into a higher-dimensional space, expanding the feature representation. 
@@ -39,7 +39,7 @@ This repository provides a comprehensive implementation of the Vision Transforme
 ---
 
 ### Multi-Head Self-Attention Mechanism
-<div style="text-align: center;"><img src="Images/MultiHeadSelfAttention.png" width="300" height="400" alt="Multi-Head Self-Attention Mechanism"></div>
+<p align="center"><img src="Images/MultiHeadSelfAttention.png" width="300" height="400" alt="Multi-Head Self-Attention Mechanism"></p>
 
    1. #### Structure of the Multi-Head Self-Attention Mechanism:
       1. Input Representation: The input image is divided into non-overlapping patches, each flattened into a vector.
@@ -72,7 +72,7 @@ This repository provides a comprehensive implementation of the Vision Transforme
 ---
 
 ### Transformer Encoder Block
-<div style="text-align: center;"><img src="Images/TransformerEncoder.png" width="250" height="400" alt="Transformer Encoder Block"></div>
+<p align="center"><img src="Images/TransformerEncoder.png" width="250" height="400" alt="Transformer Encoder Block"></p>
    
    1. #### Structure of the Transformer Encoder Block:
       1. Layer Normalization:
