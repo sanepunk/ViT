@@ -11,13 +11,13 @@ import numpy as np
 from sklearn.metrics import accuracy_score
 torch.set_num_threads(4)
 model = ViT(
-            image_size= 64,
-			in_channels= 3,
-			patch_size= 16,
-			num_transformer_layers= 10, 
-			embedding_dim= 256, 
-			mlp_size= 3072,
-			num_heads= 8,
+            image_size = 64,
+			in_channels = 3,
+			patch_size = 16,
+			num_transformer_layers = 10,
+			embedding_dim = 256,
+			mlp_size = 3072,
+			num_heads = 8,
 			attention_dropout = 0.,
 			mlp_dropout = 0.1,
 			embedding_dropout = 0.1,
